@@ -6,11 +6,11 @@ export class SplitText {
     let wrappedText = '';
     for (let i = 0; i < text.length; i++) {
       const char = text.charAt(i);
-      console.log(char);
+      // console.log(char);
       wrappedText += `<span class="mask"><span class="splitted-text">${char}</span></span>`;
     }
     el.innerHTML = wrappedText;
-    this.hide();
+    this.hideSplitText();
     window.showSplitText = this.showSplitText;
     window.hideSplitText = this.hideSplitText;
   }
