@@ -1,9 +1,6 @@
 import gsap from 'gsap';
 
-export const canvasButton = function() {
-  if(window.flag) return;
-  window.flag = true;
-
+export const canvasButton = function(strokeColor = '#f37321') {
   document.querySelectorAll('.btn').forEach(btn => {
     let canvas;
     btn.addEventListener('mouseenter', function() {
@@ -27,9 +24,9 @@ export const canvasButton = function() {
 
       const ctx = canvas.getContext('2d');
       ctx.lineWidth = 1.0;
-      // ctx.lineJoin = "round";
-      // ctx.lineCap  = "round";
-      ctx.strokeStyle = "#f37321"; 
+      // ctx.lineJoin = 'round';
+      // ctx.lineCap  = 'round';
+      ctx.strokeStyle = strokeColor;
       ctx.shadowColor = 0;
       ctx.shadowOffsetX = 0; 
       ctx.shadowOffsetY = 0;

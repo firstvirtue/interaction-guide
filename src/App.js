@@ -1,12 +1,16 @@
 import React, {useEffect, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { canvasButton } from './canvas-button';
+import { canvasButton } from './lib/canvas-button';
+import { SplitText } from './lib/split-text';
 
 function App() {
   useEffect(() => {
-    canvasButton();
+    if(window.flag) return;
+    window.flag = true;
     
+    canvasButton('#fff');
+    new SplitText(document.querySelector('.tit'));
   }, []);
 
   return (
@@ -17,6 +21,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <p className='tit'>EXRS</p>
         <a
           className="App-link"
           href="https://reactjs.org"

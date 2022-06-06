@@ -28,3 +28,13 @@ canvas {
   box-sizing: border-box;
   /* overflow: hidden; */
 }
+
+.mask {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.splitted-text {
+  display: inline-block;
+  position: relative;
+}
