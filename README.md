@@ -15,3 +15,10 @@ You may also see any lint errors in the console.
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
+
+## References
+#### get number of lines
+https://stackoverflow.com/questions/783899/how-can-i-count-text-lines-inside-an-dom-element-can-i
+
+#### css animation with random
+https://css-tricks.com/random-numbers-css/
