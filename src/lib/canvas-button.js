@@ -12,10 +12,11 @@ export const canvasButton = function(strokeColor = '#f37321') {
       const maxY = Math.floor(rect.height - 1);
 
       canvas.style.position = 'absolute';
-      canvas.style.top = 0;
-      canvas.style.left = 0;
+      canvas.style.top = '-1px';
+      canvas.style.left = '-1px';
       canvas.style.width = (rect.width) + 'px';
       canvas.style.height = (rect.height) + 'px';
+      canvas.style.zIndex = 1;
       canvas.width = rect.width;
       canvas.height = rect.height;
       console.log(maxX)
