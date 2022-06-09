@@ -29,6 +29,9 @@ canvas {
   /* overflow: hidden; */
 }
 
+
+/* split-text */
+
 .mask {
   display: inline-block;
   overflow: hidden;
@@ -37,4 +40,13 @@ canvas {
 .splitted-text {
   display: inline-block;
   position: relative;
+}
+
+/* reveal-text */
+.char-wrap {
+  display: inline-block;
+}
+
+.char {
+  display: inline-block;
 }

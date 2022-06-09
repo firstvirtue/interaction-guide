@@ -5,7 +5,8 @@ export class SplitText {
     const text = el.innerHTML;
     let wrappedText = '';
     for (let i = 0; i < text.length; i++) {
-      const char = text.charAt(i);
+      let char = text.charAt(i);
+      if(/\s/g.test(char)) char = '&nbsp';
       // console.log(char);
       wrappedText += `<span class="mask"><span class="splitted-text">${char}</span></span>`;
     }

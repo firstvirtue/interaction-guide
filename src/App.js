@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { canvasButton } from './lib/canvas-button';
 import { SplitText } from './lib/split-text';
+import { RevealText } from './lib/reveal-text';
 
 function App() {
   useEffect(() => {
@@ -11,6 +12,7 @@ function App() {
     
     canvasButton('#fff');
     new SplitText(document.querySelector('.tit'));
+    new RevealText({el: document.querySelector('.title')});
   }, []);
 
   return (
@@ -18,6 +20,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <button className="btn">aaa</button>
+        <h2 className='h2 title'>EDGAR MAIN</h2>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
